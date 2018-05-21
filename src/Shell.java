@@ -22,10 +22,6 @@ public class Shell {
 		//insert main method calls
 		System.out.println("Welcome to TFTP client...\nType 'help' to see complete command list");
 		
-		//start audio
-		BGMus audio = new BGMus("dk.wav");
-		audio.start();
-		
 		
 		//main command switch
 		while(!exitCond){
@@ -46,7 +42,6 @@ public class Shell {
 				break;
 			case "exit":
 				exitCond = true;
-				audio.stop();
 				break;
 			default: 
 				System.out.println("Invalid command!");
