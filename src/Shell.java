@@ -14,7 +14,7 @@ public class Shell {
 	static boolean connected = false;
 	private static TFTPclient client = null;
 	
-	public static void main(String[] args) throws LineUnavailableException, UnsupportedAudioFileException, IOException {
+	public static void main(String[] args) {
 		
 		boolean exitCond = false;
 		String input = "";
@@ -150,10 +150,6 @@ public class Shell {
 		}
 
 		return inetAddress;
-	}
-	public static void playMus() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
-		
-		
 	}
 
 }
